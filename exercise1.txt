@@ -1,0 +1,63 @@
+>>>> Newton Second Law
+1. Simpan 600 sebagai massa benda
+2. Simpan 2 sebagai percepatan
+3. Hitung massa dikali percepatan, simpan sebagai resultan gaya
+4. Tampilkan hasil resultkan gaya
+_____________
+SET 'm' with value 600
+SET 'a' with value 2
+SET 'f' without any values
+
+CALCULATE 'm' times 'a' STORE result to 'f'
+
+DISPLAY 'f' as a result
+==========================================================
+>>>> Tahun Kabisat
+1. Masukan tahun
+2. Simpan pada variabel
+3. Hitung kalkulasi
+4. Jika thn habis dibagi 4 dan tidak habis dibagi 100, lanjut ke step 6.
+5. Jika thn habis dibagi 4, habis dibagi 100, dan habis dibagi 400, lanjut step 6, jika tidak tampilkan step 7.
+6. Tampilkan "Ini Tahun Kabisat". Selesai.
+7. Tampilkan "Ini bukan tahun Kabisat". Selesai.
+_____________
+SET 'tahun' with number values
+
+IF 'tahun'%4 === 0 && 'tahun'%100 !== 0
+	DISPLAY "Ini tahun Kabisat"
+ELSE
+	DISPLAY "Ini bukan tahun Kabisat"
+ENDIF
+==========================================================
+>>>> Laundry Day
+1. Masukan pakaian satu persatu
+2. Cek apabila jumlah pakaian sudah 20
+3. Nyalakan mesin cuci
+_____________
+SET 'pakaian' with value 0
+
+WHILE 'pakaian' < 20
+	DO 'pakaian' added by 1
+	IF 'pakaian' === 20
+		DO "Turn on washing machine"
+	ENDIF
+ENDWHILE
+==========================================================
+>>>> Periksa Kuku
+1. Bariskan siswa dari awal
+2. Periksa kuku masing - masing siswa dengan berkeliling dari depan
+3. Puji siswa apabila kuku pendek
+4. Hukum siswa apabila kuku panjang
+_____________
+SET 'siswa' with value 0
+SET 'panjang' with true
+
+WHILE 'siswa' < 40
+	IF 'panjang' === true
+		DO "Hukum siswa"
+	ELSE 
+		DO "Puji siswa"
+	ENDIF 
+	
+	DO 'siswa' added by 1
+ENDWHILE
